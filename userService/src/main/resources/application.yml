@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: userService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitness_user_db
+    username: postgres
+    password: 4268
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081
