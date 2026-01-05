@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/activityservice/activityservice.iml" filepath="$PROJECT_DIR$/activityservice/activityservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aiservice/aiservice.iml" filepath="$PROJECT_DIR$/aiservice/aiservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fitnessMicroservice.iml" filepath="$PROJECT_DIR$/.idea/fitnessMicroservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/userService/userService.iml" filepath="$PROJECT_DIR$/userService/userService.iml" />
     </modules>

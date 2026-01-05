@@ -7,6 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="configserver" />
+      </profile>
+      <profile name="Annotation profile for activityservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath>
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="activityservice" />
       </profile>
       <profile name="Annotation profile for userService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -15,18 +26,24 @@
         <processorPath>
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
-        <module name="activityservice" />
+        <module name="aiservice" />
         <module name="userService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="activityservice" target="18" />
+      <module name="activityservice" target="16" />
+      <module name="aiservice" target="18" />
+      <module name="configserver" target="18" />
+      <module name="eureka" target="18" />
       <module name="userService" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="activityservice" options="-parameters" />
+      <module name="aiservice" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="eureka" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
   </component>
